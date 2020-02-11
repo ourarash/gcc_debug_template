@@ -6,7 +6,14 @@
   "configurations": [
     {
       "preLaunchTask": "build active file",
-
+      "name": "CodeLLDB",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "args": [],
+    },
+    {
+      "preLaunchTask": "build active file",
       "name": "(lldb) Launch",
       "type": "cppdbg",
       "request": "launch",
@@ -17,6 +24,16 @@
       "environment": [],
       "externalConsole": false,
       "MIMode": "lldb"
-    }
+    },
+    {
+      "name": "GDB",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "cwd": "${workspaceFolder}",
+
+      "MIMode": "gdb"
+      
+  }
   ]
 }

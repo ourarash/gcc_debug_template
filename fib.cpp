@@ -1,6 +1,8 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <vector>
+
 
 void PrintEndMessage() { std::cout << "Program ended!" << std::endl; }
 
@@ -27,13 +29,15 @@ public:
 };
 
 int main() {
+  std::vector<int> v = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+
   Solution s;
   int r = s.fib(10);
   std::cout << "r: " << r << std::endl;
 
   int j = s.fib(12);
   std::cout << "r: " << r << std::endl;
-  
+
   PrintEndMessage();
   return 0;
 }

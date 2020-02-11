@@ -11,7 +11,7 @@
     {
       "label": "build active file",
       "type": "shell",
-      "command": "g++ ${file} -g -o ${fileDirname}/${fileBasenameNoExtension}",
+      "command": "g++ --std=c++11 ${file} -g -o  ${fileDirname}/${fileBasenameNoExtension}",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -23,7 +23,7 @@
         "panel": "shared"
       },
       "osx": {
-        "command": "g++ ${file} -g -o ${fileDirname}/${fileBasenameNoExtension}",
+        "command": "g++ --std=c++11 ${file} -g -o  ${fileDirname}/${fileBasenameNoExtension}",
       },
       "windows": {
         "command": "g++",
